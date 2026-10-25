@@ -1,0 +1,29 @@
+{
+  "name": "min-phone-agent-v1",
+  "version": "1.0.0",
+  "description": "Twilio + Node.js voice assistant prototype for Min",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test test/*.test.js",
+    "test:health": "node scripts/healthcheck.js"
+  },
+  "keywords": [
+    "twilio",
+    "voice",
+    "assistant",
+    "node"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "twilio": "^5.4.2",
+    "ws": "^8.20.0"
+  },
+  "overrides": {
+    "qs": "6.16.0"
+  }
+}
